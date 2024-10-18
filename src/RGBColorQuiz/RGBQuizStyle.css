@@ -1,0 +1,69 @@
+/* Ensures the body, HTML, and root element take up full height helps with centering */
+body,
+html,
+#root {
+  height: 100%;
+}
+
+/* Adjust iframe if needed to fill the height code sandbox extraness... */
+iframe {
+  height: 100%;
+  width: 100%;
+  position: relative !important;
+  border: none; /* Remove borders if any */
+}
+
+/* Main app container using Flexbox for centering basic centering of application */
+.RGBApp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make the app take the full viewport height */
+}
+
+/* The centered box with a fixed size creation of our random box */
+.guess-me-box {
+  width: 275px;
+  height: 200px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  position: relative;
+}
+
+button {
+  padding: 4px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* Any button next to a button */
+button + button {
+  margin-left: 20px;
+}
+
+.answers.wrong {
+  color: red;
+  text-align: center;
+  font-size: 24px;
+}
+
+.answers.correct {
+  color: green;
+  text-align: center;
+  font-size: 24px;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  right: 30px;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
